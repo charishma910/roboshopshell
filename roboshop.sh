@@ -15,8 +15,7 @@ do
         INSTANCE_TYPE="t2.micro"
     fi
 
-    IP_ADDRESS=$(aws ec2 run-instances 
-        --image-id "$AMI" \
+    IP_ADDRESS=$(aws ec2 run-instances --image-id "$AMI" \
         --instance-type "$INSTANCE_TYPE" \
         --security-group-ids "$SG_ID" \
         --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]" \

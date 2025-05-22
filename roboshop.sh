@@ -21,8 +21,7 @@ do
     # creating route53 record make sure deleting exisisting record
     aws route53 change-resource-record-sets \
     --hosted-zone-id $ZONE_ID \
-    --change-batch '
-
+    --change-batch '    
     {
         "Comment": "Create a record set"
         ,"Changes": [{
@@ -36,6 +35,5 @@ do
                 }]
             }
         }]
-    }
-      '
+    }'
 done

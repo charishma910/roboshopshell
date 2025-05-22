@@ -5,7 +5,7 @@ ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-MONGODB_HOST=MONGODB-SERVER-IPADDRESS
+MONGODB_HOST=mongodb.daws76s.shop
 TIMESTAMP=$(date +%F-%H-%M-%s)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 

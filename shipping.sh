@@ -9,7 +9,7 @@ N="\e[0m"
 TIMESTAMP=$(date +%F-%H-%M-%s)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
-MYSQL_HOST=MYSQL-SERVER-IPADDRESS
+MYSQL_HOST=mysql.daws76s.shop
 
 echo "script Started executing at $TIMESTAMP" &>> $LOGFILE
 

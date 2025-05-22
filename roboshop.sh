@@ -32,7 +32,7 @@ do
         ,"Changes"            : [{
         ,"Action"             : "CREATE"
         ,"ResourceRecordSet"  :{
-            "Name"             : "'"$i'.'$DOMAIN_NAME"'"
+            "Name"             : "'$i'.'$DOMAIN_NAME'"
             ,"Type"            : "A"
             ,"TTL"             : 1
             ,"ResourceRecords" : [{

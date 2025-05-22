@@ -28,11 +28,11 @@ do
     --hosted-zone-id "$ZONE_ID" \
     --change-batch '
     {
-        "Comment"             : "Create a record set"
-        ,"Changes"            : [{
-        ,"Action"             : "CREATE"
-        ,"ResourceRecordSet"  :{
-            "Name"             : "'$i'.'$DOMAIN_NAME'"
+        "Comment": "Testing creating a record set"
+        ,"Changes":  [{
+        ,"Action"              : "CREATE"
+        ,"ResourceRecordSet"   :{
+            "Name"             : "'" $i "'.'$DOMAIN_NAME'"
             ,"Type"            : "A"
             ,"TTL"             : 1
             ,"ResourceRecords" : [{
